@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Shoe Store</title>
+  <meta name="description" content="Affordable men’s, women’s & kids’ shoes. Order easily via WhatsApp. Fast replies. Trusted by happy customers.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="kids.html">Kids</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section contact-info">
+    <h2>We’d love to hear from you!</h2>
+    <p>Use WhatsApp to reach us directly, ask about shoe sizes, place an order, or get updates on deliveries.</p>
+
+    <a class="whatsapp-button" href="https://wa.me/+27732253904?text=Hello%2C%20I%20have%20a%20question%20about%20your%20shoes." target="_blank">
+      Message Us on WhatsApp
+    </a>
+
+    <div class="availability-box">
+      <h3>Availability</h3>
+      <p>📱 Monday – Saturday</p>
+      <p>⏰ 9:00 AM – 6:00 PM</p>
+    </div>
+  </section>
+
+  <section class="section contact-form">
+    <h2>Prefer leaving a message?</h2>
+    <form onsubmit="return sendToWhatsApp();">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="text" id="phone" placeholder="Your Phone Number" required />
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="whatsapp-button">Send via WhatsApp</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lion May Pty Ltd. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </footer>
+
+  <script>
+    function sendToWhatsApp() {
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const message = document.getElementById('message').value;
+
+      const whatsappMessage = `Name: ${name}%0APhone: ${phone}%0AMessage: ${message}`;
+      const url = `https://wa.me/+27732253904?text=${whatsappMessage}`;
+
+      window.open(url, '_blank');
+      return false;
+    }
+  </script>
+</body>
+</html>

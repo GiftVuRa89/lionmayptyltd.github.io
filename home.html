@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lion May Pty Ltd</title>
+    <meta name="description" content="Affordable men’s, women’s & kids’ shoes. Order easily via WhatsApp. Fast replies. Trusted by happy customers.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px 30px;
+            background: linear-gradient(135deg, #f39c12, #d35400);
+            color: white;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .products {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .product-card p {
+            margin: 5px 0 15px;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .whatsapp-button:hover {
+            background-color: #1ebe5b;
+        }
+
+        footer {
+            background: #1e1e1e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lion May Shoes</h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Style Delivered to Your WhatsApp</h2>
+    <p>See something you like? Message us to order, arrange payment and delivery.</p>
+    <a class="whatsapp-button" href="https://wa.me/+27732253904" target="_blank">Chat on WhatsApp</a>
+</section>
+
+<section id="pro">
+    <h4>BEST-OFFERS</h4>
+    <h2>Super Value Deals</h2>
+    <h1>On all products</h1>
+    <p>Save Your Money</p>
+
+</section>
+
+<section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="nike shoes/AIR+MAX+DN8+(GS).jpeg" alt="Nike Air Max DN8" loading="lazy">
+            <h3>Nike Air Max DN8</h3>
+            <p class="price">
+                <span class="original-price">R3700</span>
+                <span class="discounted-price">R1850</span>
+              </p>
+            <a class="whatsapp-button" href="https://wa.me/+27732253904?text=I'm%20interested%20in%20Men's%20Classic%20Sneakers" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product-card">
+            <img src="nike shoes/JQ2463_06_standard.jpg" alt="Adidas Y-3 Genode" loading="lazy">
+            <h3>Adidas Y-3 Genode</h3>
+            <p class="price">
+                <span class="original-price">R8999</span>
+                <span class="discounted-price">R4499</span>
+              </p>
+            <a class="whatsapp-button" href="https://wa.me/+27732253904?text=I'm%20interested%20in%20Women's%20Running%20Shoes" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product-card">
+            <img src="nike shoes/WMNS+NIKE+COURT+LEGACY+LIFT.png.jpg" alt="Nike Court Legacy" loading="lazy">
+            <h3>Nike Court Legacy</h3>
+            <p class="price">
+                <span class="original-price">R2000</span>
+                <span class="discounted-price">R1000</span>
+              </p>
+            <a class="whatsapp-button" href="https://wa.me/+27732253904?text=I'm%20interested%20in%20Kids%20Fun%20Sneakers" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product-card">
+            <img src="NEW SHOES/16.jpg" alt="Nike Air Force 1'07 LV8" loading="lazy">
+            <h3>Nike Air Force 1'07 LV8</h3>
+            <p class="price">
+                <span class="original-price">R3200</span>
+                <span class="discounted-price">R1600</span>
+              </p>
+            <a class="whatsapp-button" href="https://wa.me/+27732253904?text=I'm%20interested%20in%20Kids%20Fun%20Sneakers" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product-card">
+            <img src="KIDS SHOES/10.jpeg" alt="Nike Air Jordan Aura"  loading="lazy">
+            <h3>Nike Air Jordan Aura</h3>
+            <p class="price">
+                <span class="original-price">R1400</span>
+                <span class="discounted-price">R700</span>
+              </p>
+            <a class="whatsapp-button" href="https://wa.me/+27732253904?text=I'm%20interested%20in%20Kids%20Fun%20Sneakers" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product-card">
+            <img src="nike shoes/W+NIKE+AIR+MAX+PORTAL (5).jpeg" alt="Nike Air Max Portal" loading="lazy">
+            <h3>Nike Air Max Portal</h3>
+            <p class="price">
+                <span class="original-price">R2200</span>
+                <span class="discounted-price">R1100</span>
+              </p>
+            <a class="whatsapp-button" href="https://wa.me/+27732253904?text=I'm%20interested%20in%20Kids%20Fun%20Sneakers" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product-card">
+            <img src="nike shoes/NIKE+AIR+MAX+PLUS (1).jpeg" alt="Nike Air Max Plus"   loading="lazy">
+            <h3>Nike Air Max Plus</h3>
+            <p class="price">
+                <span class="original-price">R3700</span>
+                <span class="discounted-price">R1850</span>
+              </p>
+            <a class="whatsapp-button" href="https://wa.me/+27732253904?text=I'm%20interested%20in%20Kids%20Fun%20Sneakers" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product-card">
+            <img src="nike shoes/NIKE+SB+DUNK+LOW+PRO.jpeg" alt="Nike SB Dunk Low PRO"   loading="lazy">
+            <h3>Nike SB Dunk Low PRO</h3>
+            <p class="price">
+                <span class="original-price">R2500</span>
+                <span class="discounted-price">1250</span>
+              </p>
+            <a class="whatsapp-button" href="https://wa.me/+27732253904?text=I'm%20interested%20in%20Kids%20Fun%20Sneakers" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product-card">
+            <img src="KIDS SHOES/3.jpeg" alt="Puma Pre School Kid" loading="lazy">
+            <h3>Puma Pre School Kid</h3>
+            <p class="price">
+                <span class="original-price">R1400</span>
+                <span class="discounted-price">R700</span>
+              </p>
+            <a class="whatsapp-button" href="https://wa.me/+27732253904?text=I'm%20interested%20in%20Kids%20Fun%20Sneakers" target="_blank">Order on WhatsApp</a>
+    </div>
+</section>
+
+
+<section id="banner" class="section-m1">
+    <h4>Buy 100% Quality Shoes With Less Price!</h4>
+    <h2>Up To <span>50% OFF</span> On All The Shoes</h2>
+
+</section>
+
+<section class="products">
+    <h2>New Arrivals</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="NEW SHOES/23.jpg" alt="Adidas Drop Step" loading="lazy">
+            <h3>Adidas Drop Step</h3>
+            <p class="price">
+                <span class="original-price">R2000</span>
+                <span class="discounted-price">R1000</span>
+              </p>
+            <a class="whatsapp-button" href="https://wa.me/+27732253904?text=I'm%20interested%20in%20Kids%20Fun%20Sneakers" target="_blank">Order on WhatsApp</a>
+        </div>
+     <div class="product-card">
+            <img src="8889.jpg" alt="Nike Air Force 1 Low Olive Gold" loading="lazy">
+            <h3>Nike Air Force 1 Low Olive Gold</h3>
+            <p class="price">
+                <span class="original-price">R2800</span>
+                <span class="discounted-price">R1400</span>
+              </p>
+            <a class="whatsapp-button" href="https://wa.me/+27732253904?text=I'm%20interested%20in%20Kids%20Fun%20Sneakers" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product-card">
+            <img src="nike shoes/W+AIR+FORCE+1+'07+FLYEASE.png.jpg" alt="Nike Air Force 1'07 Flyease" loading="lazy">
+            <h3>Nike Air Force 1'07 Flyease</h3>
+            <p class="price">
+                <span class="original-price">R2800</span>
+                <span class="discounted-price">R1400</span>
+              </p>
+            <a class="whatsapp-button" href="https://wa.me/+27732253904?text=I'm%20interested%20in%20Kids%20Fun%20Sneakers" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product-card">
+            <img src="nike shoes/IF0307_06_standard.jpg" alt="Adidas Ultra 4D" loading="lazy">
+            <h3>Adidas Ultra 4D</h3>
+            <p class="price">
+                <span class="original-price">R1800</span>
+                <span class="discounted-price">R900</span>
+              </p>
+            <a class="whatsapp-button" href="https://wa.me/+27732253904?text=I'm%20interested%20in%20Kids%20Fun%20Sneakers" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product-card">
+            <img src="nike shoes/IF6298_01_standard.jpg" alt="Adidas ZX 750" loading="lazy">
+            <h3>Adidas ZX 750</h3>
+            <p class="price">
+                <span class="original-price">R1400</span>
+                <span class="discounted-price">R700</span>
+              </p>
+            <a class="whatsapp-button" href="https://wa.me/+27732253904?text=I'm%20interested%20in%20Kids%20Fun%20Sneakers" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product-card">
+            <img src="MEN SHOES/12.jpeg" alt="Puma Softride" loading="lazy">
+            <h3>Puma Softride</h3>
+            <p class="price">
+                <span class="original-price">R1400</span>
+                <span class="discounted-price">R700</span>
+              </p>
+            <a class="whatsapp-button" href="https://wa.me/+27732253904?text=I'm%20interested%20in%20Kids%20Fun%20Sneakers" target="_blank">Order on WhatsApp</a>
+        </div>
+
+        <a href="https://wa.me/+27732253904" class="floating-whatsapp" target="_blank">💬</a>
+
+       
+</section>
+
+
+<!-- About Us Section -->
+<section class="section about-us">
+    <h2>About Us</h2>
+    <p>We’re a passionate team dedicated to providing high-quality footwear at affordable prices. From trending streetwear to classic kicks, we source the best styles so you can walk with confidence. Customer service is our priority, and WhatsApp makes it easy to reach us instantly.</p>
+  </section>
+  
+  <!-- WhatsApp Availability -->
+  <section class="section availability">
+    <h3>WhatsApp Availability</h3>
+    <p>We’re online and ready to chat:</p>
+    <ul>
+      <li>✅ Monday – Saturday</li>
+      <li>⏰ 9:00 AM – 6:00 PM</li>
+      <li>📞 Quick responses guaranteed!</li>
+    </ul>
+  </section>
+  
+  <!-- Customer Testimonials -->
+  <section class="section testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p>“Great quality shoes and fast response on WhatsApp. Will definitely order again!”</p>
+        <strong>- Lebo M.</strong>
+      </div>
+      <div class="testimonial-card">
+        <p>“I love my sneakers! The price was good and the team is super friendly.”</p>
+        <strong>- Sipho N.</strong>
+      </div>
+      <div class="testimonial-card">
+        <p>“Very convenient shopping experience. I just messaged them on WhatsApp and got my order the after 3 days.”</p>
+        <strong>- Zanele T.</strong>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 Lion May Pty Ltd. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </footer>
+  
+
+</body>
+</html>
