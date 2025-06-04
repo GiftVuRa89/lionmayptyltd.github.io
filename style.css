@@ -59,13 +59,6 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 30px;
-    margin-top: 30px;
-}
-
 .product-card {
     background: #fff;
     border-radius: 12px;
@@ -256,9 +249,6 @@ footer {
         font-size: 0.9rem;
     }
 
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 .about-us p,
 .availability p,
@@ -345,5 +335,31 @@ footer {
   .contact-form button {
     margin-top: 10px;
   }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+  gap: 30px;
+  margin-top: 30px;
+}
+
+@media (max-width: 992px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr); /* tablets/small laptops */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr); /* phones */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* extra small phones */
+  }
+}
+
   
 
